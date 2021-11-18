@@ -32,7 +32,8 @@ jobs:
           
       - name: 'Refresh'
         run: |
-          git add .
           git config --global user.email "siumabon123@gmail.com"
           git config --global user.name "See.Loooo"
+          git add -A
+          git commit -m "refresh Date"
           git push origin master
