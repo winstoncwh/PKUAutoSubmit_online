@@ -29,4 +29,8 @@ jobs:
           chmod -R 777 /usr/bin/chromedriver
           chmod -R 777 ./chromedriver/bin/chromedriver
           python main.py --ID ${{secrets.ID}} --PASSWORD ${{secrets.PASSWORD}} --MAIL_ADDRESS ${{secrets.MAIL_ADDRESS}} --PHONE_NUMBER ${{secrets.PHONE_NUMBER}} --SENDKEY ${{secrets.SENDKEY}}
+          
+      - name: 'Refresh'
+        run: |
+          git commit
           git push origin master
