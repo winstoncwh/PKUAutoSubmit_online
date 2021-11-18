@@ -63,8 +63,8 @@ if __name__ == '__main__':
         service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'])
     print('Driver Launched\n')
 
-    for i in range(1, len(argconf.ID) + 1):
-        print("第" + str(i) + "位同學開始報備")
-        go('config' + str(i) + '.ini', i)
+    for num in range(1, len(argconf.ID) + 1):
+        print("第" + str(num) + "位同學開始報備")
+        go('config' + str(num) + '.ini', num)
 
     driver_pjs.quit()
