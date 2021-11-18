@@ -39,11 +39,11 @@ def go(config, num):
     if time == now_time:
         print("今天已經報備過了!")
     else:
-        run(driver_pjs, argconf.ID[num-1], argconf.PASSWORD[num-1], campus, argconf.MAIL_ADDRESS[num-1], argconf.PHONE_NUMBER[num-1], reason,
-            detail, destination, track,
-            habitation, district, street, capture, path, wechat, argconf.SENDKEY[num-1])
+        run(driver_pjs, argconf.ID[num - 1], argconf.PASSWORD[num - 1], campus, argconf.MAIL_ADDRESS[num - 1],
+            argconf.PHONE_NUMBER[num - 1], reason, detail, destination, track, habitation, district, street, capture,
+            path, wechat, argconf.SENDKEY[num - 1])
         conf.set("time", "time", now_time)
-        conf.write(open("config" + str(i) + ".ini", "w"))
+        conf.write(open("config" + str(num) + ".ini", "w"))
 
 
 if __name__ == '__main__':
