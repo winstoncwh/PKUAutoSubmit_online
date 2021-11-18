@@ -13,7 +13,7 @@ def env_check():
         raise ImportError(
             '没有找到selenium包，请用pip安装一下吧～ pip3 install --user selenium')
 
-    if not os.path.exists('config.ini'):
+    if not os.path.exists('config1.ini'):
         raise ValueError('请先在config.sample.ini文件中填入个人信息，并将它改名为config.ini')
 
     print('环境检查通过')
