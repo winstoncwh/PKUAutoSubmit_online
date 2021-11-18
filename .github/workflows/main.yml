@@ -32,5 +32,6 @@ jobs:
           
       - name: 'Refresh'
         run: |
-          git commit
+          git config --global user.email "siumabon123@gmail.com"
+          git config --global user.name "See.Loooo"
           git push origin master
