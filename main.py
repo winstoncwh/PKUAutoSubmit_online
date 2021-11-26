@@ -59,7 +59,7 @@ if __name__ == '__main__':
     chrome_options.add_argument("--headless")
     driver_pjs = webdriver.Edge(
         options=chrome_options,
-        executable_path=sys_path(browser="chromedriver"),
+        executable_path='/usr/bin/chromedriver',
         service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'])
     print('Driver Launched\n')
 
